@@ -1,0 +1,182 @@
+table {
+  border-collapse: collapse;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:20px
+}
+
+body{
+font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+ color: white;
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: #D7C49E;
+}
+
+.button {
+  background-color: #D7C49E;
+  border: none;
+  color: #343148;
+  padding: 10px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:20px;
+}
+
+.button:hover {
+  background-color: #D7C49E; 
+  color: white;
+}
+h1 {
+    margin: 0;
+    padding-top: 3rem;
+	padding-bottom: 2rem;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-family: 'Teko', sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+  }
+}
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px #D7C49E;
+    }
+    to {
+      text-shadow: 0 0 30px #343148, 0 0 10px #D7C49E;
+    }
+  }
+  h2 {
+	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-weight: 500;
+	font-size: 2rem;
+	color: #D7C49E;
+  }
+
+  h3 {
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 16px;
+	color: #D7C49E;
+}
+}
+ .music-box {
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .controls {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+            color: white;
+        }
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #D7C49E;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #e3ab12;
+}
+
+.container {
+  width:12em; /* Slightly increased width for better spacing */
+  display: grid;
+  position: absolute;
+  left: 10px; /* Align closer to the left of the page */
+  top: 135px; /* Position near the top */
+  color: black;
+  align-items: center;
+  grid-template-columns: 1fr; /* One column layout */
+  grid-gap: 0.5em; /* Add spacing between elements */
+  background-color: #343148;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Improved shadow */
+  padding: 1em; /* Better padding for spacing */
+}
+
+/* Clock */
+.clock {
+  background-color: #D7C49E;
+  color: black;
+  text-align: center;
+  font-size: 1.5em; /* Adjusted font size for balance */
+  margin: 0.2em;
+  border-radius: 0.2em;
+  padding: 0.5em;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle inner shadow for depth */
+}
+
+/* Date */
+.date {
+  background-color:#D7C49E;
+  color: #D7C49E5;
+  text-align: center;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  font-weight: bold;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inner shadow for depth */
+  font-size: 0.9em; /* Reduced font size slightly */
+}
+
+.date span {
+  display: block; /* Each part of the date is on a new line */
+  font-size: 0.8em; /* Smaller font size for individual elements */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .container {
+    width: 10em; /* Reduce width for smaller screens */
+    left: 5px;
+    top: 80px;
+  }
+  
+  .clock,
+  .date {
+    font-size: 1em; /* Reduce font size for better fit */
+  }
+}

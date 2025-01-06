@@ -1,0 +1,118 @@
+/* **INSERT !!** <div class="image-hover"></div> */
+
+.image-hover {
+    width: 370px; /* Specify the width */
+    height: 520px; /* Specify the height */
+    background-image: url('images/front.png'); /* Initial background image */
+    background-size: cover; /* Cover the entire area of the element */
+    transition: background-image 0.5s ease-in-out; /* Smooth transition */
+}
+
+.image-hover:hover {
+    background-image: url('images/front2.png'); /* Change on hover */
+}
+
+/* Logo */
+.image-logo-hover {
+    width: 130px; /* Specify the width */
+    height: 80px; /* Specify the height */
+    background-image: url('image/logo1.png'); /* Initial background image */
+    background-size: cover; /* Cover the entire area of the element */
+    transition: background-image 0.5s ease-in-out; /* transition */
+}
+
+.image-logo-hover:hover {
+    background-image: url('image/logo2.png'); /* Change on hover */
+}
+
+/* Instagram */
+.insta-hover {
+    width: 25px; /* Specify the width */
+    height: 25px; /* Specify the height */
+    background-image: url('image/insta1.png'); /* Initial background image */
+    background-size: cover; /* Cover the entire area of the element */
+    transition: background-image 0.5s ease-in-out; /* Smooth transition */
+}
+
+.insta-hover:hover {
+    background-image: url('image/insta2.png'); /* Change on hover */
+}
+
+/* Facebook */
+.fb-hover {
+    width: 25px; /* Specify the width */
+    height: 25px; /* Specify the height */
+    background-image: url('image/fb1.png'); /* Initial background image */
+    background-size: cover; /* Cover the entire area of the element */
+    transition: background-image 0.5s ease-in-out; /* Smooth transition */
+}
+
+.fb-hover:hover {
+    background-image: url('image/fb2.png'); /* Change on hover */
+}
+
+/* Youtube */
+.yt-hover {
+    width: 25px; /* Specify the width */
+    height: 25px; /* Specify the height */
+    background-image: url('image/yt1.png'); /* Initial background image */
+    background-size: cover; /* Cover the entire area of the element */
+    transition: background-image 0.5s ease-in-out; /* Smooth transition */
+}
+
+.yt-hover:hover {
+    background-image: url('image/yt2.png'); /* Change on hover */
+}
+
+/* X (Twitter) */
+.x-hover {
+    width: 25px; /* Specify the width */
+    height: 25px; /* Specify the height */
+    background-image: url('image/x1.png'); /* Initial background image */
+    background-size: cover; /* Cover the entire area of the element */
+    transition: background-image 0.5s ease-in-out; /* Smooth transition */
+}
+
+.x-hover:hover {
+    background-image: url('image/x2.png'); /* Change on hover */
+}
+
+/* Figure/Column HoverClicker */
+
+.column {
+	margin: 10px 10px 0;
+	padding: 0;
+}
+.column div {
+	position: relative;
+	float: center;
+	width: 150px;
+	height: 150px;
+	margin: 0 0 55 58px;
+	padding: 0;
+}
+.column div:first-child {
+	margin-left: 5;
+}
+
+/* kat sini nk edit saiz gambar */
+figure {
+	width: 170px;
+	height: 160px;
+	margin: 0;
+	padding: 10;
+	background: #D7C49E;
+	overflow: hidden;
+}
+
+/* Slide */
+.hover figure img {
+	margin-left: 10px;
+	-webkit-transform: scale(1.0);
+	transform: scale(1.0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover figure:hover img {
+	margin-left: -10;
+}
